@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* Cabecera*/
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #fbf6ec;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 210px;
+  display: block;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 430px;
+  margin: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #5b3e1b;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: red;
+}
+
+/*Banner*/
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/perrito\ con\ persona.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(209, 219, 189, 0.5);
+}
+
+.llamada_accion {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.llamada_accion p {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 55px;
+}
+
+.llamada_accion h2 {
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  padding: 45px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 450px;
+  margin: auto;
+}
+
+.llamada_accion a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.llamada_accion a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Seccion Bienvenida*/
+
+.Bienvenida {
+  width: 100%;
+  background-color: #7f6e07;
+  padding-top: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.Bienvenida h3 {
+  font-size: 16px;
+}
+
+.Bienvenida p {
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 1.7em;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+/*Nosotros*/
+.nosotros {
+  padding-bottom: 80px;
+}
+
+.nosotros > .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foto_equipo {
+  width: 100%;
+  max-width: 570px;
+}
+
+.foto_equipo img {
+  width: 100%;
+}
+
+.conocenos {
+  text-align: center;
+  padding: 15px 0;
+  max-width: 570px;
+}
+
+.conocenos p:nth-child(1) {
+  font-size: 14px;
+  color: #6a6e71;
+  padding-bottom: 20px;
+  border-bottom: 1.2px solid #6a6e71;
+}
+
+.conocenos h3 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #81d5e4;
+  font-size: 18px;
+}
+
+.conocenos p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5b3e1b;
+  padding-bottom: 25px;
+}
+
+.conocenos p:nth-child(4) {
+  font-size: 14px;
+  color: #6a6e71;
+  padding-bottom: 25px;
+}
+
+.conocenos a {
+  color: #81d5e4;
+  font-size: 15px;
+}
+
+@media all and (min-width: 769px) {
+  .nosotros {
+    padding-top: 80px;
+  }
+  .foto_equipo {
+    margin-right: 30px;
+  }
+  .conocenos {
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+
+/*Footer*/
+
+.top_footer {
+  background-color: #7f6e07;
+  height: 25px;
+}
+
+.center_footer {
+  background-color: #ad9815;
+}
+.center_footer .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.center_footer .widget {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: white;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.bottom_footer {
+  background-color: #7f6e07;
+  height: 25px;
+}
+
+.bottom_footer p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.center_footer .widget h4 {
+  padding-bottom: 35px;
+  font-size: 18px;
+}
+
+.center_footer .widget p {
+  font-size: 14px;
+}
+
+/* header {
+  width: 100%;
+}
+
+.imagen_header {
+  width: 20%;
+  margin-top: -1rem;
+}
+
+.caja_header {
+  display: flex;
+  padding: 2rem;
+}
+
+.item_list {
+  display: inline;
+  margin-left: 8rem;
+  font-size: 1rem;
+}
+
+.title_main-section {
+  background-image: url(../img/perrito1.jpg);
+  background-size: cover;
+  height: 25rem;
+  text-align: center;
+  position: relative;
+  bottom: 5rem;
+  z-index: -1;
+  padding-top: 10rem;
+  color: azure;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px gray;
+}
+
+.item_main-section {
+  width: 90%;
+  margin: 0rem 2rem 0rem 2.5rem;
+  text-align: center;
+  position: relative;
+  bottom: 20rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  padding: 0rem 2rem 0rem -2rem;
+  opacity: 1.2;
+  color: white;
+  text-shadow: 3px 3px 3px gray;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.seccion1 {
+  display: flex;
+  width: 90%;
+  position: relative;
+  top: -15rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+.galeria {
+  width: 50%;
+} */
